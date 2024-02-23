@@ -18,7 +18,7 @@ const textSchema=zod.object({
 }).strict();
 
 app.get("/translate",(req,res)=>{
-    res.status(200).sendFile('index.html')
+    res.status(200).sendFile('index.html',{root: __dirname })
 });
 
 app.post("/translate", async (req,res)=>{
