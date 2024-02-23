@@ -40,7 +40,7 @@ app.post("/translate", async (req,res)=>{
         // console.log(res)
     }).catch(err => {
         // console.error(err)
-        res.json({
+        res.status(400).json({
             error: "Error while translating"
         })
     })
