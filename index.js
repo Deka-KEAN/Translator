@@ -49,6 +49,8 @@ app.post("/translate", async (req,res)=>{
 app.listen(port,()=>console.log("Port listening"));
 
 
+// Export the Express API
+module.exports = app;
 
 
 
